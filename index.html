@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#F4F7FF] min-h-screen">
+<body class="bg-[#f4f7ff] min-h-screen">
     <section>
         <header class="max-w-screen-2xl m-auto pt-5">
             <nav class="flex justify-between items-center navbar bg-white rounded-2xl p-5">
@@ -18,9 +18,9 @@
                 <div class="flex justify-between items-center gap-4">
                     <div class="flex justify-center items-center h-16 w-32 bg-[#f4f7ff] rounded-full gap-3">
                         <img class="text-3xl" src="/assets/checkbox.png" alt="checkbox">
-                        <h2 class="font-bold text-3xl">23</h2>
+                        <h2 id="Addnumber" class="font-bold text-3xl">23</h2>
                     </div>
-                    <div class="bg-[#f4f7ff] rounded-full p-3"><a href=""><img class="h-10 bg-[#f4f7ff] rounded-full" src="/assets/theme-btn.png" alt="theme btn"></a></div>
+                    <button id="changeColorButton" class="bg-[#f4f7ff] rounded-full p-3"><img src="/assets/theme-btn.png" alt=""></button>
                 </div>
             </nav>
         </header>
@@ -34,7 +34,7 @@
                             <div class="bg-white p-5 rounded-full"><img class="h-7" src="/assets/checkbox.png" alt="checkbox">
                             </div>
                             <div class="pl-3"><h6 class="font-medium text-xl">Task Assigned</h6>
-                                <h3 class="font-bold text-4xl">05</h3>
+                                <h3 id="Task" class="font-bold text-4xl">05</h3>
                             </div>
                         </div>
                         <div class="box  p-4 text-center rounded-lg flex justify-center items-center w-2/4  bg-linear-to-r from-[#3752FD] to-[#9BA8F8]">
@@ -47,8 +47,11 @@
                         <div class="box bg-[#f4f7ff] p-6 rounded-lg flex w-1/4">
                             <div class="bg-white p-5 rounded-full"><img class="h-7" src="/assets/calender.png" alt="checkbox">
                             </div>
-                            <div class="pl-3"><h6 class="font-medium text-2xl">Wed,</h6>
-                                <h3 class="font-bold text-2xl">Jul 28 2025 </h3>
+                            <!-- <div id="date" class="pl-3"><h6 class="font-medium text-2xl">Wed,</h6>
+                                <h3  class="font-bold text-2xl">Jul 28 2025 </h3>
+                            </div> -->
+                            <div id="date-widget" class="">
+                                <div id="date-display" class="text-2xl font-bold pl-2"></div>
                             </div>
                         </div>
                     </div>
@@ -71,7 +74,7 @@
                                     <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
                                 </div>
                                 <div>
-                                    <button class="btn btn-primary">Completed</button>
+                                    <button id="Completebtn" class="btn btn-primary">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -90,14 +93,52 @@
                                     <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
                                 </div>
                                 <div>
+                                    <button id="Completebtn" class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-[#f4f7ff] text-primary-content w-96 p-3">
+                            <div class="card-body pb-0">
+                                <button class="btn bg-white border-none h-10 w-28">SwiftPay</button>
+                                <h2 class="card-title text-3xl text-[#00303C]">Optimize  Home page</h2>
+                                <div class="bg-white h-24 p-1 rounded-lg overflow-hidden"><p class="text-xl">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p></div>
+                                <div class="card-actions justify-end">
+                              </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="flex justify-around items-center">
+                                <div>
+                                    <h6 class="text-[#00303C] text-xl">Deadline</h6>
+                                    <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
+                                </div>
+                                <div>
                                     <button class="btn btn-primary">Completed</button>
                                 </div>
                             </div>
                         </div>
                         <div class="card bg-[#f4f7ff] text-primary-content w-96 p-3">
                             <div class="card-body pb-0">
-                                <button class="btn bg-white border-none h-10 w-28">CloudSync</button>
-                                <h2 class="card-title text-3xl text-[#00303C]">Add Dark Mode</h2>
+                                <button class="btn bg-white border-none h-10 w-28">Meta</button>
+                                <h2 class="card-title text-3xl text-[#00303C]">Add new emoji 🤲</h2>
+                                <div class="bg-white h-24 p-1 rounded-lg overflow-hidden"><p class="text-xl">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p></div>
+                                <div class="card-actions justify-end">
+                              </div>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="flex justify-around items-center">
+                                <div>
+                                    <h6 class="text-[#00303C] text-xl">Deadline</h6>
+                                    <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
+                                </div>
+                                <div>
+                                    <button id="Completebtn" class="btn btn-primary">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card bg-[#f4f7ff] text-primary-content w-96 p-3">
+                            <div class="card-body pb-0">
+                                <button class="btn bg-white border-none h-10 w-28">Google LLC</button>
+                                <h2 class="card-title text-3xl text-[#00303C]">Integrate OpenAI API </h2>
                                 <div class="bg-white h-24 p-1 rounded-lg overflow-hidden"><p class="text-xl">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p></div>
                                 <div class="card-actions justify-end">
                               </div>
@@ -115,46 +156,8 @@
                         </div>
                         <div class="card bg-[#f4f7ff] text-primary-content w-96 p-3">
                             <div class="card-body pb-0">
-                                <button class="btn bg-white border-none h-10 w-28">CloudSync</button>
-                                <h2 class="card-title text-3xl text-[#00303C]">Add Dark Mode</h2>
-                                <div class="bg-white h-24 p-1 rounded-lg overflow-hidden"><p class="text-xl">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p></div>
-                                <div class="card-actions justify-end">
-                              </div>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="flex justify-around items-center">
-                                <div>
-                                    <h6 class="text-[#00303C] text-xl">Deadline</h6>
-                                    <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary">Completed</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card bg-[#f4f7ff] text-primary-content w-96 p-3">
-                            <div class="card-body pb-0">
-                                <button class="btn bg-white border-none h-10 w-28">CloudSync</button>
-                                <h2 class="card-title text-3xl text-[#00303C]">Add Dark Mode</h2>
-                                <div class="bg-white h-24 p-1 rounded-lg overflow-hidden"><p class="text-xl">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p></div>
-                                <div class="card-actions justify-end">
-                              </div>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="flex justify-around items-center">
-                                <div>
-                                    <h6 class="text-[#00303C] text-xl">Deadline</h6>
-                                    <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary">Completed</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card bg-[#f4f7ff] text-primary-content w-96 p-3">
-                            <div class="card-body pb-0">
-                                <button class="btn bg-white border-none h-10 w-28">CloudSync</button>
-                                <h2 class="card-title text-3xl text-[#00303C]">Add Dark Mode</h2>
+                                <button class="btn bg-white border-none h-10 w-28">Glassdoar</button>
+                                <h2 class="card-title text-3xl text-[#00303C]">Improve Job searching </h2>
                                 <div class="bg-white h-24 p-1 rounded-lg overflow-hidden"><p class="text-xl">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p></div>
                                 <div class="card-actions justify-end">
                               </div>
@@ -194,5 +197,8 @@
         </div>
     </section>
     
+    <script src="/js/bgColorChangeBtn.js"></script>
+    <script src="/js/btnCompleted.js"></script>
+    <script src="/js/calenderdate.js"></script>
 </body>
 </html>
