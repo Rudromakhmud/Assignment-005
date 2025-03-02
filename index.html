@@ -93,7 +93,7 @@
                                     <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
                                 </div>
                                 <div>
-                                    <button id="Completebtn" class="btn btn-primary">Completed</button>
+                                    <button id="Completebtn" class="btn btn-primary OptimizedButton" onclick="CompleteButtonFunction('OptimizedButton')">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +112,7 @@
                                     <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
                                 </div>
                                 <div>
-                                    <button class="btn btn-primary">Completed</button>
+                                    <button class="btn btn-primary OptimizedButton1" onclick="CompleteButtonFunction1('OptimizedButton1')">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -131,7 +131,7 @@
                                     <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
                                 </div>
                                 <div>
-                                    <button id="Completebtn" class="btn btn-primary">Completed</button>
+                                    <button id="Completebtn" class="btn btn-primary OptimizedButton2" onclick="CompleteButtonFunction2('OptimizedButton2')" >Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +150,7 @@
                                     <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
                                 </div>
                                 <div>
-                                    <button class="btn btn-primary">Completed</button>
+                                    <button class="btn btn-primary OptimizedButton3" onclick="CompleteButtonFunction2('OptimizedButton3')">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -162,14 +162,14 @@
                                 <div class="card-actions justify-end">
                               </div>
                             </div>
-                            <div class="divider"></div>
+                            <hr class="border-dashed"></hr>
                             <div class="flex justify-around items-center">
                                 <div>
                                     <h6 class="text-[#00303C] text-xl">Deadline</h6>
                                     <h2 class="text-[#00303C] text-2xl font-bold">21 March 2025</h2>
                                 </div>
                                 <div>
-                                    <button class="btn btn-primary">Completed</button>
+                                    <button class="btn btn-primary" disabled>Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -184,9 +184,9 @@
                 <img class="h-6" src="/assets/activity.png" alt="">
                 <h2 class="text-xl pl-2">Activity Log</h2>
             </div>
-            <div class="flex justify-center pt-3"><button class="btn btn-primary">Clear History</button></div>
+            <div class="flex justify-center pt-3 "><button class="btn btn-primary" onclick="ClearNotification()">Clear History</button></div>
             <div class="divider"></div>
-            <div class="box p-4">
+            <div class="box p-4" id="NotificationPanel">
                 <div class="bg-[#f4f7ff] p-1 rounded-lg mb-4"><p class="text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</p></div>
                 <div class="bg-[#f4f7ff] p-1 rounded-lg mb-4"><p class="text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</p></div>
                 <div class="bg-[#f4f7ff] p-1 rounded-lg mb-4"><p class="text-sm">You have Complete The Task Add Dark Mode at 12:48:15 PM</p></div>
